@@ -25,4 +25,7 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  c = {
+    ["<C-a>"] = { "<C-b>", desc = "Go to start of line" },
+  }
 }
