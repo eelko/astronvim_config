@@ -4,33 +4,30 @@ A user configuration template for [AstroNvim](https://github.com/AstroNvim/Astro
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
-
 ```shell
-mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.config/nvim ~/.config/nvim.bak # Make a backup of your current nvim and shared folder
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
-```
-
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim # Clone AstroNvim
+git clone https://github.com/eelko/astronvim_config ~/.config/nvim/lua/user # Clone this repos
 ```
 
 #### Start Neovim
 
 ```shell
 nvim
+```
+
+### Switching mechanism for multiple nvim instances
+
+```shell
+# Switching mechanism for neovim setups (Astronvim vs personal setup)
+switchnvim() {
+    mv ~/.config/nvim ~/.config/nvim_old
+    mv ~/.config/nvim.switch ~/.config/nvim
+    mv ~/.config/nvim_old ~/.config/nvim.switch
+
+    mv ~/.local/share/nvim ~/.local/share/nvim_old
+    mv ~/.local/share/nvim.switch ~/.local/share/nvim
+    mv ~/.local/share/nvim_old ~/.local/share/nvim.switch
+}     
 ```
