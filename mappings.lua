@@ -8,6 +8,7 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
+    ["<leader>uB"] = { "<cmd>highlight Normal guibg=NONE<cr>", desc = "Remove Background" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
