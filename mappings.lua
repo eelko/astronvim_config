@@ -28,6 +28,7 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<esc>"] = { "<C-\\><C-n>", desc = "We want Esc to behave like Esc in the terminal..." },
   },
   c = {
     ["<C-a>"] = { "<C-b>", desc = "Go to start of line" },
