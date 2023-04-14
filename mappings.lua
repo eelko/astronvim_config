@@ -23,12 +23,16 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["<C-H>"] = { ":bprev<CR>", desc = "Previous Buffer" },
+    ["<C-J>"] = { ":bprev<CR>", desc = "Previous Buffer" },
+    ["<C-L>"] = { ":bnext<CR>", desc = "Next Buffer" },
+    ["<C-K>"] = { ":bnext<CR>", desc = "Next Buffer" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<esc>"] = { "<C-\\><C-n>", desc = "We want Esc to behave like Esc in the terminal..." },
+    ["<S-Esc>"] = { "<C-\\><C-n>", desc = "We want Esc to behave like Esc in the terminal..." },
   },
   c = {
     ["<C-a>"] = { "<C-b>", desc = "Go to start of line" },
