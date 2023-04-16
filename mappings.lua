@@ -24,10 +24,10 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
-    ["<C-H>"] = { ":bprev<CR>", desc = "Previous Buffer" },
-    ["<C-J>"] = { ":bprev<CR>", desc = "Previous Buffer" },
-    ["<C-L>"] = { ":bnext<CR>", desc = "Next Buffer" },
-    ["<C-K>"] = { ":bnext<CR>", desc = "Next Buffer" },
+    ["<C-,>"] = { ":bprev<CR>", desc = "Previous Buffer" },
+    ["<C-.>"] = { ":bnext<CR>", desc = "Next Buffer" },
+    ["<leader>Op"] = { "<cmd>:w !pycharm %<cr>", desc = "Open current buffer in Pycharm" },
+    ["<leader>Oc"] = { "<cmd>:w !code %<cr>", desc = "Open current buffer in Visual Studio Code" },
   },
   t = {
     -- setting a mapping to false will disable it
