@@ -28,6 +28,10 @@ return {
     ["<C-.>"] = { ":bnext<CR>", desc = "Next Buffer" },
     ["<leader>Op"] = { "<cmd>:w !pycharm %<cr>", desc = "Open current buffer in Pycharm" },
     ["<leader>Oc"] = { "<cmd>:w !code %<cr>", desc = "Open current buffer in Visual Studio Code" },
+    ["[q"] = { "<cmd>:cprev<cr>", desc = "Previous in Quicklist" },
+    ["]q"] = { "<cmd>:cnext<cr>", desc = "Next in Quicklist" },
+    ["[Q"] = { "<cmd>:cfirst<cr>", desc = "First in Quicklist" },
+    ["]Q"] = { "<cmd>:clast<cr>", desc = "Last in Quicklist" },
   },
   t = {
     -- setting a mapping to false will disable it
