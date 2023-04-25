@@ -20,5 +20,6 @@ return {
     --   -- use colors from this colorscheme by requiring vscode.colors!
     --   Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
     -- }
-  }
+  },
+  event = "VeryLazy",
 }
