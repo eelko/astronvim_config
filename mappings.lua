@@ -32,6 +32,8 @@ return {
     ["]q"] = { "<cmd>:cnext<cr>", desc = "Next in Quicklist" },
     ["[Q"] = { "<cmd>:cfirst<cr>", desc = "First in Quicklist" },
     ["]Q"] = { "<cmd>:clast<cr>", desc = "Last in Quicklist" },
+    -- ["<C-x>"] = { "<cmd>:delete<cr>", desc = "Delete never copies" },
+    -- ["d"] = { "\"_d", desc = "Delete never copies" },
   },
   t = {
     -- setting a mapping to false will disable it
@@ -40,5 +42,8 @@ return {
   },
   c = {
     ["<C-a>"] = { "<C-b>", desc = "Go to start of line" },
+  },
+  i = {
+    ["<C-s>"] = { "<cmd>:w<cr>", desc = "Save in insert mode" },
   }
 }
