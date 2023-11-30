@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { 'c', 'cpp', 'lua', 'python', 'help', 'cmake', 'javascript', 'dockerfile' },
+    ensure_installed = { 'c', 'cpp', 'lua', 'python', 'vimdoc', 'cmake', 'javascript', 'dockerfile' },
   },
 }
