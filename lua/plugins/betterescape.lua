@@ -1,5 +1,5 @@
-return {
-  "max397574/better-escape.nvim",
+return{
+  "max397574/better-escape.nvim", 
   config = function()
     require("better_escape").setup {
       mapping = { "jj" },       -- a table with mappings to use
@@ -8,4 +8,5 @@ return {
       keys = "<Esc>",           -- keys used for escaping, if it is a function will use the result everytime
     }
   end,
-}
+
+} 
